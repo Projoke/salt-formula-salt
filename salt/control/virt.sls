@@ -32,7 +32,7 @@ update-guestfs-appliance:
 
 salt_control_virt_{{ cluster_name }}_{{ node_name }}:
   module.run:
-  - name: virtng.init
+  - name: virt.init
   - m_name: {{ node_name }}.{{ cluster.domain }}
   - cpu: {{ size.cpu }}
   - mem: {{ size.ram }}
